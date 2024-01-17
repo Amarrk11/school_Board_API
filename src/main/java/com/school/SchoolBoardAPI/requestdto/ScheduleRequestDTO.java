@@ -1,24 +1,21 @@
-package com.school.SchoolBoardAPI.entity;
+package com.school.SchoolBoardAPI.requestdto;
 
 import java.time.LocalTime;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.school.SchoolBoardAPI.entity.School;
+
+
 import jakarta.persistence.OneToOne;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 @Getter
 @Setter
-@Entity
 @Builder
-public class Schedule {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int schedulelId;
+@Data
+public class ScheduleRequestDTO {
+	
 	@OneToOne
 	private School school;
 	private LocalTime opensAt;
@@ -27,7 +24,4 @@ public class Schedule {
 	private LocalTime lunchTime;
 	private int classHoursPerDay;
 	private LocalTime classHourLength;
-	
-	
-
 }
