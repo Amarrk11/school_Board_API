@@ -1,5 +1,6 @@
 package com.school.SchoolBoardAPI.entity;
 
+import java.time.Duration;
 import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
@@ -26,7 +27,9 @@ public class Schedule {
 	private LocalTime breakTime;
 	private LocalTime lunchTime;
 	private int classHoursPerDay;
-	private LocalTime classHourLength;
+	private Duration classHourLengthInMinutes;
+	private Duration breakLengthInMinutes;
+	private Duration lunchLengthInMinutes;
 	
 	
 

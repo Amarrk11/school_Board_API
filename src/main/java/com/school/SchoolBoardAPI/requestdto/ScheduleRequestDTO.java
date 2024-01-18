@@ -1,5 +1,6 @@
 package com.school.SchoolBoardAPI.requestdto;
 
+import java.time.Duration;
 import java.time.LocalTime;
 
 import com.school.SchoolBoardAPI.entity.School;
@@ -23,5 +24,7 @@ public class ScheduleRequestDTO {
 	private LocalTime breakTime;
 	private LocalTime lunchTime;
 	private int classHoursPerDay;
-	private LocalTime classHourLength;
+	private int classHourLengthInMinutes;
+	private int breakLengthInMinutes;
+	private int lunchLengthInMinutes;
 }

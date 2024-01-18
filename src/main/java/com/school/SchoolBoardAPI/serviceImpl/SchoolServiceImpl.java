@@ -87,7 +87,7 @@ public class SchoolServiceImpl implements SchoolService {
 					structure.setData(schoolToSchoolResponseDTO(school));
 					structure.setMessage("school saved successfully");
 					structure.setStatusCode(HttpStatus.CREATED.value());
-					return new ResponseEntity<ResponseStructure<SchoolResponseDTO>>(structure , HttpStatus.CREATED);
+		return new ResponseEntity<ResponseStructure<SchoolResponseDTO>>(structure , HttpStatus.CREATED);
 				}
 				else throw new UnauthorizedAccessException("school already exist");	
 			}

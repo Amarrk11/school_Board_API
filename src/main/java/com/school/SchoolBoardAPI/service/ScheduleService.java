@@ -10,5 +10,9 @@ public interface ScheduleService {
 
 	ResponseEntity<ResponseStructure<ScheduleResponseDTO>> addSchedlue(int schoolId,
 			ScheduleRequestDTO scheduleRequest);
+	public ResponseEntity<ResponseStructure<ScheduleResponseDTO>> updateById(int scheduleId,
+			ScheduleRequestDTO scheduleRequest);
+	ResponseEntity<ResponseStructure<ScheduleResponseDTO>> findScheduleByschool(int schoolId);
+	
 
 }

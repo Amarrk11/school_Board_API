@@ -1,5 +1,6 @@
 package com.school.SchoolBoardAPI.responsedto;
 
+import java.time.Duration;
 import java.time.LocalTime;
 
 
@@ -22,5 +23,7 @@ public class ScheduleResponseDTO {
 	private LocalTime breakTime;
 	private LocalTime lunchTime;
 	private int classHoursPerDay;
-	private LocalTime classHourLength;
+	private int classHourLengthInMinutes;
+	private int breakLengthInMinutes;
+	private int lunchLengthInMinutes;
 }

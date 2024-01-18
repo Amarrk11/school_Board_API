@@ -1,4 +1,4 @@
-package com.school.SchoolBoardAPI.serviceImpl;
+package com.school.SchoolBoardAPI.exception;
 
 public class AdminExistsException extends RuntimeException {
 private String msg;
